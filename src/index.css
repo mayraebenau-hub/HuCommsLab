@@ -1,0 +1,19 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-humand-blue: #0046FF;
+  --color-humand-navy: #0A1F44;
+  --color-humand-gray-bg: #F8F9FA;
+  --color-humand-gray-border: #E9ECEF;
+  --color-humand-text-primary: #1A1A1A;
+  --color-humand-text-secondary: #6C757D;
+}
+
+@layer base {
+  body {
+    @apply bg-humand-gray-bg text-humand-text-primary font-sans;
+  }
+}
